@@ -1,0 +1,6 @@
+node_modules
+
+.eslintrc
+.eslintignore
+
+src/gatsby-types.d.ts

@@ -2,6 +2,14 @@
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "dashes"
+        }
+      }
+    ],
     /* Projects */
     // "incremental": true,                              /* Enable incremental compilation */
     // "composite": true,                                /* Enable constraints that allow a TypeScript project to be used with project references. */
@@ -13,7 +21,10 @@
     /* Language and Environment */
     "target": "esnext",
     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    "lib": ["dom", "esnext"],
+    "lib": [
+      "dom",
+      "esnext"
+    ],
     /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     "jsx": "react",
     /* Specify what JSX code is generated. */
